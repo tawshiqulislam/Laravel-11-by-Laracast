@@ -11,7 +11,16 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     </head>
-    <body class="font-sans antialiased dark:bg-black dark:text-white/50">
-        <h1>Hello from the Home Page</h1>
+    <body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
+
+
+        <!-- Slot for <h1>Hello from the Home Page</h1> print it over here in layout -->
+        {{-- ? php echo $slot ?> --}}
+        {{ $slot }}
     </body>
 </html>
